@@ -1,7 +1,5 @@
 const functions = require('firebase-functions');
 
-const firestore = require('firebase-functions/lib/providers/datastore');
-
 const nodemailer = require('nodemailer');
 const gmailEmail = encodeURIComponent(functions.config().gmail.email);
 const gmailPassword = encodeURIComponent(functions.config().gmail.password);
@@ -33,12 +31,20 @@ const APP_NAME = 'eBookShare Web Application';
 // 	});
 // }
 
-exports.createFirestoreAuthor = firestore.document("authors/{authorId}").onWrite(event => {
+exports.createFirestoreAuthor = functions.firestore.document("authors/{authorId}").onCreate(event => {
 	
 	var newAuthor = event.data.data().userName;
 
    	console.log("Firestore Auth Object: ", event.data);
 });
+
+exports.deleteFirestoreAuthor = functions.firestore.document("authors/{authorId}").onDelete(event => {
+	
+	var newAuthor = event.data.data().userName;
+
+   	console.log("Firestore Auth Object: ", event.data);
+});
+
 
 exports.createRTDBAuthor = functions.database.ref("authors/{authorId}").onWrite(event => {
 	
