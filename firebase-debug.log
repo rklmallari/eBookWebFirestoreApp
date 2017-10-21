@@ -1,0 +1,20 @@
+[debug] [2017-10-07T13:45:40.955Z] ----------------------------------------------------------------------
+[debug] [2017-10-07T13:45:40.957Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-10-07T13:45:40.957Z] CLI Version:   3.13.1
+[debug] [2017-10-07T13:45:40.957Z] Platform:      linux
+[debug] [2017-10-07T13:45:40.957Z] Node Version:  v8.2.1
+[debug] [2017-10-07T13:45:40.957Z] Time:          Sat Oct 07 2017 21:45:40 GMT+0800 (PHT)
+[debug] [2017-10-07T13:45:40.957Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-07T13:45:40.964Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-07T13:45:40.965Z] > authorizing via signed-in user
+[debug] [2017-10-07T13:45:40.966Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-07T13:45:40.966Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/ZzT--c5UD7KwLjJ8rCuslSYU32OkeAg9OZ4m90btV9w',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Oct 07 2017 21:45:40 GMT+0800 (PHT)
+[debug] [2017-10-07T13:45:41.554Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-07T13:45:41.560Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/ebookwebappfirestore  
+ Sat Oct 07 2017 21:45:41 GMT+0800 (PHT)
